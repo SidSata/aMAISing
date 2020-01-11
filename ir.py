@@ -19,7 +19,7 @@ GPIO.setup(5, GPIO.IN)
 irl=13
 irr=6
 irf=5
-rot=1.43
+rot=1.4
 #timetotal=0
 
 def front ():
@@ -80,12 +80,12 @@ def obstacle():
     right()
     time.sleep(rot)
     stop()    
-    t1= time.time()
+    #t1= time.time()
     while(IR(irr)==1):
         front()
     stop()    
-    t2= time.time()
-    tfront= t2-t1
+    #t2= time.time()
+    #tfront= t2-t1
     right()
     time.sleep(rot)
     stop()    
@@ -96,13 +96,47 @@ def obstacle():
     time.sleep(rot)
     stop()
     #return (timeleft-tfront)
+
+def obstacle2():
+    left()
+    time.sleep(rot)
+    stop()
+    front()
+    time.sleep(3.5)
+    stop()    
+    right()
+    time.sleep(rot)
+    stop()    
+    front()
+    time.sleep(5.5)
+    stop()    
+    #t2= time.time()
+    #tfront= t2-t1
+    right()
+    time.sleep(rot)
+    stop()    
+    front()
+    time.sleep(3.5)
+    stop()
+    left()
+    time.sleep(rot)
+    stop()
+
 stop()
 time.sleep(30)
 
+
+while (1):
+ if(IR(irf)==0):
+  front()
+ else:
+  obstacle2()
+  break
+
 front()
-time.sleep(8)
+time.sleep(4)
 right()
-time.sleep(1.4)
+time.sleep(rot)
 front()
 time.sleep(6)
 stop()
@@ -113,11 +147,5 @@ p.ChangeDutyCycle(2.5)
 time.sleep(2)
 p.ChangeDutyCycle(11.5)
 time.sleep(2)
-
-#while (1):
- #if(IR(irf)==0):
-  #front()
- #else:
-  #obstacle()
 
 GPIO.cleanup()
