@@ -11,9 +11,13 @@ GPIO.setup(26, GPIO.OUT)
 GPIO.setup(19, GPIO.OUT)
 #IR 1
 GPIO.setup(13, GPIO.IN)
-irl=2
-irr=2
-irf=2
+GPIO.setup(6, GPIO.IN)
+GPIO.setup(5, GPIO.IN)
+irl=13
+irr=6
+irf=5
+rot=1.43
+#timetotal=0
 
 def front ():
  GPIO.output(20, GPIO.HIGH)
@@ -49,16 +53,16 @@ def right ():
  
 def IR(pin):
     if (GPIO.input(pin)== 1):
-        return(true)
+        return(1)
     else:
-        return(false)
+        return(0)
     
-if (GPIO.input(13)== 0):
-    front()
+#if (GPIO.input(13)== 0):
+    #front()
     
-else:
-    back()
-time.sleep(3)
+#else:
+    #back()
+#time.sleep(3)
 
 def obstacle():
     left()
@@ -88,6 +92,22 @@ def obstacle():
     left()
     time.sleep(rot)
     stop()
-    return (timeleft-tfront)
+    #return (timeleft-tfront)
+
+time.sleep(25)
+
+front()
+time.sleep(10)
+right()
+time.sleep(1.5)
+front()
+time.sleep(5)
+stop()
+
+#while (1):
+ #if(IR(irf)==0):
+  #front()
+ #else:
+  #obstacle()
 
 GPIO.cleanup()

@@ -15,5 +15,11 @@ GPIO.output(21, GPIO.LOW)
 GPIO.output(26, GPIO.HIGH)
 GPIO.output(19, GPIO.LOW)
  
-time.sleep(1000)
+time.sleep(1.43)
+
+GPIO.output(20, GPIO.LOW)
+GPIO.output(21, GPIO.LOW)
+GPIO.output(26, GPIO.LOW)
+GPIO.output(19, GPIO.LOW)
+
 GPIO.cleanup()
