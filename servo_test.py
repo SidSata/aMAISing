@@ -11,9 +11,9 @@ try:
   while True:
     p.ChangeDutyCycle(2.5)
     time.sleep(2)
-    p.ChangeDutyCycle(7.2)
+    p.ChangeDutyCycle(7)
     time.sleep(2)
-    p.ChangeDutyCycle(11.9)
+    p.ChangeDutyCycle(11.5)
     time.sleep(2)
     p.ChangeDutyCycle(7.1)
     time.sleep(2)
