@@ -17,6 +17,8 @@ While there is already extensive research into methods to prevent medical non-ad
 
 In order to meet this urgent need, we developed an automated pill delivery and management system consisting of a robotic pill dispenser and a mobile app to enable patients and caregivers to accurately track medication according to a previously inputted schedule.
 
+[Our presentation](https://github.com/SidSata/aMAISing/blob/master/Pill_Management_System_aMAISing.pdf)
+
 ## Technology
 
 The Robot was designed using a Raspberry Pi 3B, DC and Servo Motors, Infrared Sensors, L293D Motor Drivers, Arduino and an LCD Display. Raspbian Jessie was used to program the robot. 
@@ -27,11 +29,11 @@ The Pill Management App allows the user to enter up to four medications (corresp
 
 At the allotted time, the app displays an alert on the mobile phone (appearing as a pop-up) and communicates a signal to the robot via a bluetooth module. The robot begins traveling towards the patient using the bluetooth location and uses infrared sensors to avoid obstacles. The pill dispenser arm of the robot rotates towards the desired pill slots using servo motors, and the type of medicine and time is displayed to the patient via an Arduino LCD display (not integrated into the current prototype due to restrictions on weight).
 
-[Appication UI]()
+[Appication UI](https://github.com/SidSata/aMAISing/blob/master/Application_UI.png)
 
 Live demonstrations:
-[Movement and rotation of robot]()
-[Obstacle detection and avoidance]()
+[Movement and rotation of robot](https://github.com/SidSata/aMAISing/blob/master/IMG_1935.MOV)
+[Obstacle detection and avoidance](https://github.com/SidSata/aMAISing/blob/master/IMG_1940.MOV)
 
 
 ## Feasibility
