@@ -31,7 +31,7 @@ The Pill Management App allows the user to enter up to four medications (corresp
 
 At the allotted time, the app displays an alert on the mobile phone (appearing as a pop-up) and communicates a signal to the robot via a bluetooth module. The robot begins traveling towards the patient using the bluetooth location and uses infrared sensors to avoid obstacles. The pill dispenser arm of the robot rotates towards the desired pill slots using servo motors, and the type of medicine and time is displayed to the patient via an Arduino LCD display (not integrated into the current prototype due to restrictions on weight).
 
-[Appication UI](https://github.com/SidSata/aMAISing/blob/master/Application_UI.png)
+[Application UI](https://github.com/SidSata/aMAISing/blob/master/Application_UI.png)
 
 Live demonstrations:
 
