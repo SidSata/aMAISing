@@ -25,6 +25,8 @@ The Robot was designed using a Raspberry Pi 3B, DC and Servo Motors, Infrared Se
 
 The app was implemented using MIT App Inventor.
 
+(The app can be downloaded from [here](https://github.com/SidSata/aMAISing/blob/master/App.aia) and can be opened on MIT App Inventor by clicking My Projects -> Import project (.aia) from my computer -> Uploading the downloaded file)
+
 The Pill Management App allows the user to enter up to four medications (corresponding to 4 slots on the robot), along with the respective times at which they are to be taken and the slot number on the robot.
 
 At the allotted time, the app displays an alert on the mobile phone (appearing as a pop-up) and communicates a signal to the robot via a bluetooth module. The robot begins traveling towards the patient using the bluetooth location and uses infrared sensors to avoid obstacles. The pill dispenser arm of the robot rotates towards the desired pill slots using servo motors, and the type of medicine and time is displayed to the patient via an Arduino LCD display (not integrated into the current prototype due to restrictions on weight).
