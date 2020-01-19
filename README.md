@@ -32,7 +32,9 @@ At the allotted time, the app displays an alert on the mobile phone (appearing a
 [Appication UI](https://github.com/SidSata/aMAISing/blob/master/Application_UI.png)
 
 Live demonstrations:
+
 [Movement and rotation of robot](https://github.com/SidSata/aMAISing/blob/master/IMG_1935.MOV)
+
 [Obstacle detection and avoidance](https://github.com/SidSata/aMAISing/blob/master/IMG_1940.MOV)
 
 
